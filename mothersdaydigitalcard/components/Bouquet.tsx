@@ -61,40 +61,164 @@ export default function Bouquet() {
                         {/* Vase */}
                         {/* Bouquet Vase - Wide and elegant */}
                         {/* Modern Tall Bouquet Vase */}
+                        {/* Opening */}
+                        <ellipse cx="150" cy="180" rx="35" ry="10" fill="#f3e8ff" stroke="#c4b5fd" strokeWidth="2" />
                         <path
-                            d="M 115 180 L 100 200 Q 85 220 85 280 L 85 310 Q 85 320 100 320 L 200 320 Q 215 320 215 310 L 215 280 Q 215 220 200 200 L 185 180"
+                            d="M 125 180 L 115 195 Q 105 210 105 260 L 105 285 Q 105 295 115 295 L 185 295 Q 195 295 195 285 L 195 260 Q 195 210 185 195 L 175 180"
                             fill="#f3e8ff"
                             stroke="#c4b5fd"
                             strokeWidth="2.5"
                         />
-                        {/* Opening */}
-                        <ellipse cx="150" cy="180" rx="50" ry="14" fill="#ddd6fe" stroke="#c4b5fd" strokeWidth="2" />
-                        {/* Accent line */}
-                        <line x1="90" y1="260" x2="210" y2="260" stroke="#c4b5fd" strokeWidth="1" opacity="0.5" />
 
-                        {/* Flower 1 - Pink-light (Right-front) */}
+                        {/* Accent line */}
+                        <line x1="105" y1="240" x2="195" y2="240" stroke="#c4b5fd" strokeWidth="1" opacity="0.5" />
+
+                        {/* Flower 1 - Pink-light (Mid-Right) */}
                         <g>
-                            <line x1="150" y1="220" x2="200" y2="125" stroke="#22c55e" strokeWidth="2" />
+                            <line x1="150" y1="170" x2="143" y2="80" stroke="#22c55e" strokeWidth="2" />
                             {[0, 72, 144, 216, 288].map((angle) => (
                                 <ellipse
                                     key={`flower5-${angle}`}
-                                    cx="200"
-                                    cy="125"
+                                    cx="143"
+                                    cy="80"
                                     rx="11"
                                     ry="20"
                                     fill="#f472b6"
                                     opacity="0.9"
-                                    transform={`rotate(${angle} 200 125)`}
+                                    transform={`rotate(${angle} 143 80)`}
                                 />
                             ))}
-                            <circle cx="200" cy="125" r="9" fill="#fcd34d" />
+                            <circle cx="143" cy="80" r="9" fill="#fcd34d" />
                         </g>
+                        {/* Flower 7 - Pink-light () */}
+                        <g>
+                            <line x1="150" y1="170" x2="175" y2="84" stroke="#22c55e" strokeWidth="2" />
+                            {[0, 72, 144, 216, 288].map((angle) => (
+                                <ellipse
+                                    key={`flower5-${angle}`}
+                                    cx="175"
+                                    cy="84"
+                                    rx="11"
+                                    ry="20"
+                                    fill="#8a72f4"
+                                    opacity="0.9"
+                                    transform={`rotate(${angle} 175 84)`}
+                                />
+                            ))}
+                            <circle cx="175" cy="84" r="9" fill="#fcd34d" />
+                        </g>
+                        
+                        {/* Flower 2 - Orange (Left) */}
+                        <g>
+                            <line x1="145" y1="170" x2="115" y2="110" stroke="#22c55e" strokeWidth="2" />
+                            {[0, 72, 144, 216, 288].map((angle) => (
+                                <ellipse
+                                    key={`flower5-${angle}`}
+                                    cx="115"
+                                    cy="110"
+                                    rx="11"
+                                    ry="20"
+                                    fill="#ffbb00"
+                                    opacity="0.9"
+                                    transform={`rotate(${angle} 115 110)`}
+                                />
+                            ))}
+                            
+                            <circle cx="115" cy="110" r="9" fill="#fcd34d" />
+                        </g>
+                        {/* Flower 3 - Blue (Right) */}
+                        <g>
+                            <line x1="160" y1="170" x2="190" y2="120" stroke="#22c55e" strokeWidth="2" />
+                            {[0, 72, 144, 216, 288].map((angle) => (
+                                <ellipse
+                                    key={`flower5-${angle}`}
+                                    cx="190"
+                                    cy="120"
+                                    rx="11"
+                                    ry="20"
+                                    fill="#00d9ff"
+                                    opacity="0.9"
+                                    transform={`rotate(${angle} 190 120)`}
+                                />
+                            ))}
+                            
+                            <circle cx="190" cy="120" r="9" fill="#fcd34d" />
+                        </g>
+                        {/* Flower 4 - Purple (Right) */}
+                        <g>
+                            <line x1="160" y1="170" x2="165" y2="140" stroke="#22c55e" strokeWidth="2" />
+                            {[0, 72, 144, 216, 288].map((angle) => (
+                                <ellipse
+                                    key={`flower5-${angle}`}
+                                    cx="165"
+                                    cy="140"
+                                    rx="11"
+                                    ry="20"
+                                    fill="#7700ff"
+                                    opacity="0.9"
+                                    transform={`rotate(${angle} 165 140)`}
+                                />
+                            ))}
+                            
+                            <circle cx="165" cy="140" r="9" fill="#fcd34d" />
+                        </g>
+                        {/* Flower 5 - Red (MidBotLeft) */}
+                        <g>
+                            <line x1="147" y1="170" x2="140" y2="120" stroke="#22c55e" strokeWidth="2" />
+                            {[0, 72, 144, 216, 288].map((angle) => (
+                                <ellipse
+                                    key={`flower5-${angle}`}
+                                    cx="140"
+                                    cy="120"
+                                    rx="11"
+                                    ry="20"
+                                    fill="#ff0000"
+                                    opacity="0.9"
+                                    transform={`rotate(${angle} 140 120)`}
+                                />
+                            ))}
+                            
+                            <circle cx="140" cy="120" r="9" fill="#fcd34d" />
+                        </g>
+                        {/* Flower 6 - Yellow Green (MidRight) */}
+                        <g>
+                            <line x1="156" y1="170" x2="160" y2="105" stroke="#22c55e" strokeWidth="2" />
+                            {[0, 72, 144, 216, 288].map((angle) => (
+                                <ellipse
+                                    key={`flower5-${angle}`}
+                                    cx="160"
+                                    cy="105"
+                                    rx="11"
+                                    ry="20"
+                                    fill="#577c00"
+                                    opacity="0.9"
+                                    transform={`rotate(${angle} 160 105)`}
+                                />
+                            ))}
+                            
+                            <circle cx="160" cy="105" r="9" fill="#fcd34d" />
+                        </g>
+                        {/* Flower 8 - Pink-light () */}
+                        <g>
+                            <line x1="150" y1="170" x2="125" y2="150" stroke="#22c55e" strokeWidth="2" />
+                            {[0, 72, 144, 216, 288].map((angle) => (
+                                <ellipse
+                                    key={`flower5-${angle}`}
+                                    cx="125"
+                                    cy="150"
+                                    rx="11"
+                                    ry="20"
+                                    fill="#165349"
+                                    opacity="0.9"
+                                    transform={`rotate(${angle} 125 150)`}
+                                />
+                            ))}
+                            <circle cx="125" cy="150" r="9" fill="#fcd34d" />
+                        </g>
+                        
 
-                        {/* Leaves */}
-                        <ellipse cx="130" cy="180" rx="8" ry="18" fill="#22c55e" opacity="0.7" transform="rotate(-30 130 180)" />
-                        <ellipse cx="170" cy="185" rx="8" ry="18" fill="#16a34a" opacity="0.7" transform="rotate(35 170 185)" />
-                        <ellipse cx="140" cy="150" rx="7" ry="16" fill="#10b981" opacity="0.6" transform="rotate(-45 140 150)" />
-                        <ellipse cx="160" cy="155" rx="7" ry="16" fill="#059669" opacity="0.6" transform="rotate(40 160 155)" />
+
+
                     </motion.svg>
                 </motion.div>
             )}
