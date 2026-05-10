@@ -6,7 +6,7 @@ import type { CardProps } from '@/types/card';
 export default function CardLayout({ title, message, children }: CardProps) {
   return (
     <motion.div
-      className="w-full max-w-2xl mx-auto px-8 py-12 rounded-2xl shadow-2xl bg-gradient-to-br from-pink-50 via-white to-rose-50 border-4 border-pink-200"
+      className="w-full max-w-2xl mx-auto px-8 py-12 rounded-2xl shadow-2xl bg-white border-4 border-pink-200"
       initial={{ opacity: 0, scale: 0.9 }}
       animate={{ opacity: 1, scale: 1 }}
       transition={{ duration: 0.8, type: 'spring', stiffness: 100 }}
